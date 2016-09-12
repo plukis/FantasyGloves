@@ -1,0 +1,71 @@
+* {
+    margin:     0;
+    padding:    0;
+    font-family:sans-serif;
+    box-sizing: border-box
+}
+
+body{
+    background-image: url('../images/loginBackG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:    flex;
+    min-height: 100vh
+}
+
+form {
+    margin:     auto;
+    width:      50%;
+    max-width:  30em;
+    background: #00BCD4;
+    border-radius: 1em;
+    padding:    0.5em;
+    border:     0.3em solid rgba(0,0,0,0)
+}
+
+h2 {
+    text-align:     center;
+    margin-bottom:  0.5em;
+    color:          rgba(0,0,0,0.8)
+}
+
+input{
+    display:    block;
+    padding:    0.5em;
+    width:      100%;
+    margin:     1.5em 0;
+    font-size:  1em
+}
+
+input[type="submit"]{
+    background: linear-gradient(#FF6E40, #FF3D00);
+    border: 0.8;
+    color: black;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 1em;
+    margin-bottom: 0
+}
+
+/* cambio de color de opacidad al  pasar cursosr sobre el boton 
+input[type="submit"]:hover{
+    opacity: 0.8
+}
+*/
+/* Regla para en caso de dar click en en el botton se hara mas pequeño en escala de .95*/
+input[type="submit"]:active{
+    transform: scale(0.95)
+}
+
+/* para redimensionar un 75 por ciento del tamanio original */
+@media (max-width:86){
+    form{
+        width: 75%
+    }
+}
+
+@media (max-width:54){
+    form{
+        width:95%
+    }
+}
