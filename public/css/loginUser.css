@@ -1,8 +1,9 @@
 * {
-    margin:     0;
-    padding:    0;
+    box-sizing: border-box;
     font-family:sans-serif;
-    box-sizing: border-box
+    margin:     0;
+    padding:    0
+    
 }
 
 body{
@@ -14,37 +15,40 @@ body{
 }
 
 form {
-    margin:     auto;
-    width:      50%;
-    max-width:  30em;
     background: #00BCD4;
     border-radius: 1em;
+    border-style: hidden;
+    border-width: 0.3em;
+    margin:     auto;
+    max-width:  30em;
     padding:    0.5em;
-    border:     0.3em solid rgba(0,0,0,0)
+    width:      50%  
 }
 
 h2 {
-    text-align:     center;
+    color: black;
+    color: rgba(0,0,0,0.8);
     margin-bottom:  0.5em;
-    color:          rgba(0,0,0,0.8)
+    text-align:     center
+    
 }
 
 input{
     display:    block;
-    padding:    0.5em;
-    width:      100%;
+    font-size:  1em;
     margin:     1.5em 0;
-    font-size:  1em
+    padding:    0.5em;
+    width:      100%    
 }
 
 input[type="submit"]{
     background: linear-gradient(#FF6E40, #FF3D00);
     border: 0.8;
-    color: black;
-    opacity: 1;
-    cursor: pointer;
     border-radius: 1em;
-    margin-bottom: 0
+    color: black;
+    cursor: pointer;
+    margin-bottom: 0;
+    opacity: 1
 }
 
 /* cambio de color de opacidad al  pasar cursosr sobre el boton 
