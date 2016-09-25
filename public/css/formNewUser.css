@@ -1,74 +1,91 @@
 * {
     box-sizing: border-box;
-    font-family:sans-serif;
-    margin:     0;
-    padding:    0
-    
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0
 }
 
-body{
+html {
+    background: url('../images/loginBackG.png') no-repeat center fixed;
+    background-size: 100% 100%
+}
+
+
+/*
+html {
     background-image: url('../images/loginBackG.png');
     background-repeat: no-repeat;
     background-size: cover;
     display:    flex;
     min-height: 100vh
 }
+*/
 
+.bebe {
+    background-image: url('../images/bebeLucha2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    float: left;
+    min-height: 30em;
+    margin: 0 auto;
+    width: 35em
+}
 
-div {
+.container {
     background: #00BCD4;
     border-radius: 1em;
     border-style: hidden;
-    border-width: 0.1em;
-    margin:auto;
-    max-width:  30em;
-    padding:    0.5em;
-    width:      20%  
+    border-width: 1em;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 30em;
+    padding: 0.5em;
+    width: 20%
 }
-
-
 
 h2 {
     color: black;
-    color: rgba(0,0,0,0.8);
-    margin-bottom:  1em;
-    text-align:     center
-    
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 1em;
+    text-align: center
 }
 
-input{
-    display:    block;
-    font-size:  1.0em;
-    margin:     1.0em 0;
-    padding:    0.2em;
-    width:      100%    
+input {
+    /*display:    block;*/
+    font-size: 1.0em;
+    margin: 1.0em 0;
+    padding: 0.2em;
+    width: 100%
 }
 
-input[type="submit"]{
-    background: linear-gradient(#FF6E40, #FF3D00);
-    border: 0.8;
+input[type="submit"] {
+    background-color: #ff5722;
+    border: 0.8em;
     border-radius: 1em;
     color: black;
     cursor: pointer;
     margin-bottom: 0;
-    opacity: 1
 }
 
 
 /* Regla para en caso de dar click en en el botton se hara mas pequeño en escala de .95*/
-input[type="submit"]:active{
+
+input[type="submit"]:active {
     transform: scale(0.95)
 }
 
+
 /* para redimensionar un 75 por ciento del tamanio original */
-@media (max-width:86){
-    form{
+
+@media (max-width:86) {
+    form {
         width: 75%
     }
 }
 
-@media (max-width:54){
-    form{
-        width:95%
+@media (max-width:54) {
+    form {
+        width: 95%
     }
 }
